@@ -6,7 +6,7 @@ class Post
   field :body, type: String
   field :author, type: String
   
-  validates :title, presence: true
+  validates :title, presence: true, uniqueness:true
   validates :body, presence: true
   validates :author, presence: true
   

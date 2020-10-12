@@ -8,6 +8,6 @@ RSpec.describe Post, type: :model do
   end
 
   describe "ralationships" do
-    it {is_expected.to belong_to(:author)}
+    it {is_expected.to belong_to(:user)}
   end
 end

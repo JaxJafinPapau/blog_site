@@ -23,6 +23,7 @@ gem 'kaminari-mongoid'
 gem 'mongoid', '~> 7.0.6'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'uuid'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -31,6 +32,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara', '>= 2.15'
   gem 'mongoid-rspec'
+  gem 'factory_bot_rails'
 end
 
 group :development do

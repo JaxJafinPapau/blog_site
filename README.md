@@ -10,7 +10,7 @@
 
 * Getting Started
   - Fork and/or clone this repository, then run the following commands:
-    - `cd ruths_kitchen`
+    - `cd blog_challenge`
     - `bundle install`
     - `rails s`
   - Navigate to `localhost:3000` in your favorite browser. You should land at the articles#index page.

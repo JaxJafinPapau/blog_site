@@ -10,8 +10,13 @@ RSpec.describe "On posts index", type: :feature do
   end
   it "user sees 10 most recent posts" do
     visit posts_path
+    
+    expect(page).to have_css(".post-title", count: 10)
+  end
 
-    expect(page).to have_content("Post 1")
-    expect(page).to have_content("Post 10")
+  it "user does not see more than 10 posts" do
+    visit posts_path
+    
+    expect(page).to_not have_css(".post-title", count: 12)
   end
 end

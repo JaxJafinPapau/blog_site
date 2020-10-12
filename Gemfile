@@ -30,6 +30,7 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'capybara', '>= 2.15'
+  gem 'mongoid-rspec'
 end
 
 group :development do

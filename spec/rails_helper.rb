@@ -29,6 +29,7 @@ RSpec.configure do |config|
   config.use_active_record = false
   config.include Mongoid::Matchers, type: :model
   config.include FactoryBot::Syntax::Methods
+  config.include Warden::Test::Helpers
   # If you enable ActiveRecord support you should unncomment these lines,
   # note if you'd prefer not to run each example within a transaction, you
   # should set use_transactional_fixtures to false.
